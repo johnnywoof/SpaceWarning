@@ -43,6 +43,7 @@ public class SpaceWarning extends JavaPlugin{
 		FileConfiguration config = this.getConfig();
 		
 		Value.shutdown = config.getBoolean("shutdown");
+		Value.multicraft = config.getBoolean("multicraft");
 		Value.warn = config.getBoolean("warn-players");
 		Value.space = config.getLong("space-left");
 		
