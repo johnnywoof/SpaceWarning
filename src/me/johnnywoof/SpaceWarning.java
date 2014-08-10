@@ -53,6 +53,7 @@ public class SpaceWarning extends JavaPlugin{
 		
 		this.getLogger().info("[SpaceWarning] Space detection: " + Value.space + " MB");
 		this.getLogger().info("[SpaceWarning] Shutdown server: " + Value.shutdown);
+		this.getLogger().info("[SpaceWarning] Using multicraft: " + Value.multicraft);
 		this.getLogger().info("[SpaceWarning] Warn players with permission: " + Value.warn);
 		this.getLogger().info("[SpaceWarning] Loaded and ready.");
 		
