@@ -51,7 +51,15 @@ public class CheckRunnable implements Runnable{
 				
 				Bukkit.getLogger().severe("[SpaceWarning] Server is shutting down due to only " + num + " MB left on the drive!");
 				
-				Bukkit.getServer().shutdown();
+				if(!Value.multicraft) {
+				
+					Bukkit.getServer().shutdown();
+				
+				} else {
+					
+					Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "builtin:stop");
+					
+				}
 				
 			}
 			
